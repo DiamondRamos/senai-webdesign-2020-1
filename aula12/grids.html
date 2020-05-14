@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Folha de estilo do bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<style>
+		body {
+			background-color: black;
+		}
+		.container {
+			background-color: white;
+			min-height: 1000px;
+		}
+		.row div {
+			background-color: gray;
+			border: 1px solid black;
+			padding: 20px;
+			color: white;
+		}
+		.row .row {
+			border: none;
+			padding: 0px;
+		}
+	</style>
+	<title>Grids - com Bootstrap</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<!-- col para telas de tamanho pequeno e col-md para telas ≥768px -->
+			<div class="col-12 col-md-9">
+				<div class="row">
+					Conteúdo principal
+					<div class="col">
+						teste
+					</div>
+					<div class="col">
+						teste
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-3">
+				Conteúdo lateral
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				1 de 3
+			</div>
+			<div class="col">
+				2 de 3
+			</div>
+			<div class="col">
+				3 de 3
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				1 de 3
+			</div>
+			<div class="col-3">
+				2 de 3
+			</div>
+			<div class="col-3">
+				3 de 3
+			</div>
+		</div>
+	</div>
+</body>
+</html>
